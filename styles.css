@@ -1,0 +1,1477 @@
+body
+{
+    font-size: 62.5%;
+}
+
+
+html, body{
+	width: 100%;
+	padding:0;
+	margin: 0;
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+    padding:0;
+}
+
+img{
+	width:100%;
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+
+/*------colours-----*/
+#121a4b 
+#d2021a
+#3983cc
+
+
+/*--------Start of Wrapper-----*/
+
+.wrapper{
+    width:100vh;
+    width:100vw;
+    position: relative;
+   
+  }
+
+
+
+  /*--------End of wrapper-----*/
+
+
+
+/*--------Start of Logo-----*/
+
+.logo{
+      width:10em;
+      height:6em;
+      border:1px solid red;
+      
+  
+  }
+
+
+  /*--------End of Logo-----*/
+
+
+/*------start Hamburger menu-----*/
+
+
+
+
+
+
+/*------End Hamburger menu-----*/
+
+
+#meny {
+    background: #0a2571;
+    width: 50em;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    transition-timing-function: cubic-bezier(10,2,3,1);
+    transform: translateX(50rem);
+    top: 0;
+    z-index: 0;
+    transition: 0.5s;
+}
+#menyAvPaa {
+    display: none;
+}
+
+#menyAvPaa:checked ~ #meny {
+    transform: translateX(0rem);
+}
+
+#burger {
+    position: absolute;
+    cursor: pointer;
+    width: 4em;
+    height: 3em;
+    right: 2em;
+    top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#burger > div {
+    height: 2px;
+    background-color: #121a4b ;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+#menyAvPaa:checked ~ #burger > div {
+  background-color: #d2021a;
+}
+
+#menyAvPaa:checked ~ #burger > div:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+#menyAvPaa:checked ~ #burger > div:nth-child(2) {
+    opacity: 0;
+}
+#menyAvPaa:checked ~ #burger > div:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+/*--------end of hamburger----*/
+
+.menuWild{
+  font-family: 'Open sans';
+  font-size: 2em;
+  position: relative;
+  z-index: 3;
+  padding:5em;
+}
+
+.menuWild a:link, 
+.menuWild a:visited{
+  color: #d2021a;
+
+}
+
+.menuWild a:hover{ /*------ need to make hover effect---*/
+  color: #3983cc;
+
+}
+
+/*-------
+#121a4b 
+#d2021a
+#3983cc
+--------*/
+
+  /*--------Start of Hero-----*/
+
+  .hero{
+	background-image: url(img/background.png);
+      width:100vw;
+      height:70em;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+
+
+
+  /*--------Background will have a red strip on the side-----*/
+}
+
+
+
+
+  /*--------End of Hero-----*/
+
+
+.container,
+.row{
+	margin: 0em;
+	padding:2em;
+	position: relative;
+
+}
+.red{
+	border:1px solid red;
+}
+
+
+
+
+
+    /*--------Start of Headings-----*/
+
+
+
+h1.mainHeadline{
+	font-family: 'Open sans', sans-serif;
+	margin-top: 1em;
+	color: #ffffff;
+	z-index: 2;
+	font-size: 3em;
+	line-height: 1.5em;
+	letter-spacing: 0.3em;
+	padding-left: 2em;
+}
+
+
+h2.mainHeadline{
+	font-family: 'Bali sunrise';
+	margin-top: 1.2em;
+	color: #ffffff;
+	z-index: 2;
+	font-weight: 300;
+	font-size: 7em;
+	line-height: 1em;
+	letter-spacing: 0.2em;
+	padding-left: .8em;
+}
+
+
+h3.mainHeadline{
+	font-family: 'Bali sunrise';
+	margin-top: 2em;
+	color: #ffffff;
+	z-index: 2;
+	font-weight: 300;
+	font-size: 6em;
+	line-height: 1em;
+	letter-spacing: 0.2em;
+	padding-left: 2em;
+}
+
+h3.MainHeadline{
+	font-family: 'Bali sunrise';
+	color: #121a4b ;
+	font-size: 6em;
+	margin-top: 3em;
+	line-height: 1em;
+	padding-left: 2em;
+	letter-spacing: 0.2em;
+}
+
+
+
+/*------ took out h3 mainheadline-------*/
+
+
+
+
+p.mainBody{
+	font-family: 'open sans', sans-serif;
+	margin-top: 5em;
+	color: #ffffff;
+	z-index: 2;
+	font-weight: 200;
+	font-size: 2em;
+	line-height: 2em;
+	letter-spacing: 0.3em;
+	padding-left: 4em;
+	margin-top: 2em;
+}
+
+p.aboutBody{
+	font-family: 'open sans', sans-serif;
+	color: #ffffff;
+	font-size: 1.5em;
+	line-height: 2em;
+	margin-top: 4em;
+	padding-left: 6em;
+	z-index: 2;
+	letter-spacing: 0.2em;
+}
+
+
+    /*--------End of Headings-----*/
+
+ 
+.waveImg{ /*------work wave----*/
+  width: 20em;
+  height: 20em;
+  margin-top: -18em;
+  flex-direction: column;
+  float: right;
+  margin-right: 5em;
+}
+
+.waveImg1{ /*------contact wave----*/
+  width: 20em;
+  height: 20em;
+  margin-top: -18em;
+  flex-direction: column;
+  float: right;
+  margin-right: 57em;
+}
+
+.waveImg2{/*--------about wave------*/
+  width: 20em;
+  height: 20em;
+  margin-top: -35em;
+  flex-direction: column;
+  float: right;
+  margin-right: 53em;
+}
+
+
+
+    /*--------Start of Handshake-----*/
+
+ .handshake{
+  	width:100vw;
+    height:100vh;
+    margin-top: 7em;
+
+  }
+
+
+
+ /*--------End of Handshake-----*/
+
+
+
+  /*--------Start of Social media-----*/
+  
+
+  .social{
+	position: relative;
+	margin-top: -96em;
+	width: 4em;
+  float: right;
+
+	
+}
+
+.textsocial{
+	font-size: 1em;
+	font-weight: 600;
+  font-family: 'open sans light', sans-serif;
+  text-transform: uppercase;
+	margin-bottom: 5em; 
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+}
+
+a.sociallinks:link, a.sociallinks:visited{
+	color: white;
+	text-decoration: none;
+}
+
+a.sociallinks:hover{
+	color: red;
+
+}
+
+ /*--------End of Social media-----*/
+
+
+
+ /*--------Start of About and work page-----*/
+
+
+.About{
+	padding-top: 8em;
+	background-image: url(img/background1.png);
+	height: 100vh;
+}
+
+
+
+
+ .image{/*--------image has a red effect that appears on the border -----*/
+  	width:50em;
+  	border: 1px solid red;
+  	display: flex;
+  	float: right;
+  	padding: .2em;
+  	margin-right: .5em;
+  	display: flex;
+
+  
+
+  	
+  }
+
+
+
+.image:hover{
+  background-color:#d2021a ;
+  opacity: 1;
+  -webkit-transition:1s;
+
+             
+}
+ 
+
+
+.shadowBlue{
+  box-shadow: 12px -12px #3983cc;
+}
+
+
+.workImg{
+	width: 50vw;
+	display: flex;
+	margin-top: 20em;
+	padding-right: 5em;
+}
+
+
+.workimg{
+	width: 50vw;
+	display: flex;
+	margin-top: .5em;
+margin-right: -50em;
+	float: right;
+}
+
+.Camera{          /*---------------Used as background for social media in place of blue rectangle----*/
+    width: 55em;
+    border: 1px solid red;
+    display: flex;
+    float: right;
+    padding: .2em;
+    margin: 1em;
+   
+   
+
+}
+
+
+
+.right-col{
+  	width:50em;
+  	border: 1px solid red;
+  }
+
+
+/* -----start of card-------*/
+/*-------the cards replaced the Elements-----------*/
+
+.row2{
+  display: flex;
+  justify-content: space-between;
+  margin: 1em; 
+  padding: 1em;
+  margin-top: 50em; 
+
+
+}
+
+
+.Card01{
+  width: 30vw;
+  height: 50vh;
+ margin: 1em;
+ box-shadow:  0 3em 3em 0 rgba(0,0,0,0.2);
+  width: 30vw;
+
+
+}
+
+
+.Card02{
+   width: 30vw;
+  height: 50vh;
+   margin: 1em;
+   box-shadow:  0 3em 3em 0 rgba(0,0,0,0.2);
+  width: 30vw;
+
+}
+
+.Card03{
+   width: 30vw;
+  height: 50vh;
+   margin: 1em;
+   box-shadow:  0 3em 3em 0 rgba(0,0,0,0.2);
+  width: 30vw;
+
+}
+
+
+.ContainerE{
+ 
+  margin-top:1em;
+  font-size: 2em;
+  margin-left: 1em;
+  font-family: 'open sans light', sans-serif;
+
+
+}
+
+/* -----End of cards-------*/
+
+
+
+
+
+
+ /*--------End of About and work page-----*/
+
+ /*--------Start of Contact Page-----*/
+
+.contact{
+  position: relative;
+   padding:1em;
+    border:1px solid red;
+   margin-top: 3em;
+
+
+}
+
+
+
+
+
+.myContactForm{
+  background-color: #121a4b ;
+  margin-top: 3em;
+  height: 64em;
+  width: 70vw;
+  
+}
+
+
+
+.Input{
+  margin:1em 0 2em 0;
+  resize: vertical;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: .2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  color: white;
+
+}
+
+.form-control{
+ width: 50em;
+  padding: .3em;
+  margin: .1em 0;
+  display: inline-block;
+  box-sizing: border-box;
+
+
+}
+
+
+.BackgroundContact{
+  height: 50vh;
+  font-weight: 50vw;
+
+}
+
+
+
+.inTouch{
+  font-size: 2em;
+  font-family: 'open sans light',sans-serif;
+  float:right;
+  margin: -20em;
+  color: white;
+  margin-right: 3em;
+  }
+
+
+/*-----Start of Buttons----*/
+
+/*--------------------------------------link buttons to the correct pages----*/
+
+.MainBtn, .MainBtn:link{
+  background-color: transparent;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 1.5em;
+  letter-spacing: 0.5em;
+  border: 2px solid white;
+  margin-left: 2em;
+  padding: 1em;
+  margin-top: 2em;
+
+
+
+
+}
+
+.MainBtn:hover{
+  background-color: #d2021a;
+
+}
+
+
+.mainBtn, .mainBtn:link{
+  background-color: transparent;
+  font-family: 'open sans', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 1em;
+  letter-spacing: 0.5em;
+  border: 2px solid white;
+  margin: 10em;
+
+
+
+
+
+}
+
+.mainBtn:hover{
+  background-color: #d2021a;
+
+}
+
+
+
+/*-----End of Buttons----*/
+
+
+
+
+
+/*-----Start of footer-----*/
+
+
+
+.footer{
+  display: block;
+  text-align: center;
+  padding: 1px;
+  background-color:#d2021a ;
+  height: 15em;
+
+  
+}
+
+
+.imgFooter{
+	float: left;
+  width: 10em;
+  padding-top: 2em;
+  padding-left: 1em;
+  background-repeat: no-repeat;
+}
+
+
+.Paragraph1{
+  font-family: 'open sans', sans-serif;
+    font-size: 1.5em;
+    line-height:2em;
+    margin-left:10em;
+    color: white;
+    text-align: left;
+    padding-top: 1em;
+}
+
+.Paragraph{
+  font-family: 'open sans', sans-serif;
+    font-size: 1.5em;
+    line-height:2em;
+    margin-right:10em;
+    color: white;
+    text-align: right;
+    margin-top: -8em;
+
+}
+
+a{
+  color: #121a4b ;
+  font-family: 'open sans';
+  font-size: 1.5em;
+  margin-left: 53em;
+  border: 2px red;
+
+}
+
+.fa {
+ padding: 3em;
+  font-size: 3em;
+  width: 2em;
+  text-align: center;
+  text-decoration: none;
+  margin: 1em 1em;
+}
+
+
+.fa:hover {
+  color:  #3983cc;
+}
+
+
+
+
+.fa-behance{
+  color: white;
+   margin-top: -10em;
+   float: right;
+
+  
+}
+
+.fa-instagram{
+  color: white;
+   margin-top: -6em;
+   float: right;
+
+
+  
+
+}
+
+
+/*-----End of footer-----*/
+
+
+
+/*-----Start of media queries-----*/
+
+
+
+
+
+/*-------Tablet-------*/
+@media screen and (max-width: 1060px) {
+
+
+.handshake{
+    width:100vw;
+    height:100vh;
+    margin-top: 4em;
+
+  }
+
+
+h3.mainHeadline{
+  font-family: 'Bali sunrise';
+  margin-top: 1em;
+  color: #ffffff;
+  z-index: 2;
+  font-weight: 300;
+  font-size: 4em;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  padding-left: 2em;
+}
+
+
+.workimg{
+  width: 50vw;
+  display: flex;
+  margin-top: 1em;
+  padding-left: 1em;
+  float: right;
+}
+
+
+.workImg{
+  width: 100vw;
+  display: flex;
+  margin-top: 5em;
+  padding-right: 5em;
+}
+
+
+h3.mainheadline{
+  font-family: 'open sans light';
+  font-size: 2em;
+  position: absolute;
+  margin-top: 45em;
+  color: white;
+  margin-left: 2em;
+
+}
+
+
+h4.mainheadline{
+    top: 78em;
+  color: white;
+  margin-left: 3.9em;
+  font-family: 'open sans light';
+  font-size: 3em;
+  position: absolute;
+}
+
+h5.mainheadline{
+  top: 70.5em;
+  color: #ffffff;
+  margin-left: 2.5em;
+  font-family: 'open sans light';
+  font-size: 3em;
+  position: absolute;
+}
+
+
+
+
+  a{
+  color: #121a4b ;
+  font-family: 'open sans';
+  font-size: 1em;
+  margin-left: 63em;
+  border: 2px red;
+
+}
+
+h3.MainHeadline{
+  font-family: 'Bali sunrise';
+  color: #121a4b ;
+  font-size: 4em;
+  margin-top: 4em;
+  line-height: 2em;
+  padding-left: 2em;
+  letter-spacing: 0.2em;
+}
+
+.waveImg{
+  width: 15em;
+  height: 15em;
+  margin-top: -12em;
+  flex-direction: column;
+  float: right;
+  margin-right: 22em;
+}
+
+.waveImg1{
+  width: 15em;
+  height: 15em;
+  margin-top: -12em;
+  flex-direction: column;
+  float: right;
+  margin-right: 26em;
+}
+
+.waveImg2{
+  width: 15em;
+  height: 15em;
+  margin-top: -31em;
+  flex-direction: column;
+  float: right;
+  margin-right: 23em;
+}
+
+.hero{
+  background-image: url(img/background.png) ;
+      width:100vw;
+      height:70em;
+      background-size: cover;
+
+}
+
+
+.contact{
+  position: relative;
+   padding:1em;
+    border:1px solid red;
+   margin-top: 1em;
+
+
+}
+
+
+
+
+
+.myContactForm{
+  background-color: #121a4b ;
+  margin-top: 5em;
+  height: 55em;
+  width: 70em;
+  
+}
+
+
+
+.Input{
+  
+  resize: vertical;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: .2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top:1em;
+ 
+
+}
+
+.form-control{
+ width: 35em;
+  padding: .2em;
+  margin: .2em 0;
+  display: inline-block;
+  box-sizing: border-box;
+
+
+}
+
+
+.MainBtn, .MainBtn:link{
+  background-color: transparent;
+  font-family: 'open sans', sans-serif;
+  font-size: .5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 1em;
+  letter-spacing: 0.5em;
+  border: 2px solid white;
+  margin: 4em;
+
+
+
+
+
+
+}
+
+.mainBtn, .mainBtn:link{
+  background-color: transparent;
+  font-family: 'open sans', sans-serif;
+  font-size: .5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 1em;
+  letter-spacing: 0.5em;
+  border: 2px solid white;
+  margin: 18em;
+
+
+
+
+
+
+}
+
+.Camera{
+    width:50em;
+    border: 1px solid red;
+    padding: .1em;
+    margin: 1em;
+ 
+   
+
+}
+
+.inTouch{
+  font-size: 1.5em;
+  font-family: 'open sans light',sans-serif;
+  float:right;
+  margin-top: -23em;
+  margin-right: 4em;
+  color: white;
+  }
+
+.waveImg{
+  width: 10em;
+  height: 10em;
+  margin-top: -10em;
+  flex-direction: column;
+  float: right;
+  margin-right: 58em;
+}
+
+.waveImg1{
+  width: 10em;
+  height: 10em;
+  margin-top: -10em;
+  flex-direction: column;
+  float: right;
+  margin-right: 62em;
+}
+
+.waveImg2{
+  width: 10em;
+  height: 10em;
+  margin-top: -20em;
+  flex-direction: column;
+  float: right;
+  margin-right: 57em;
+}
+
+.row2{
+  display: block;
+  width: 50vw;
+  margin-top: 40em; 
+
+
+
+}
+
+.Card01{
+  width: 50vw;
+  height: 40em;
+ margin: 2em;
+ box-shadow:  0 3em 3em 0 rgba(0,0,0,0.2);
+
+
+
+}
+
+
+.Card02{
+   width: 50vw;
+  height: 40em;
+   margin: 2em;
+   box-shadow:  0 3em 3em 0 rgba(0,0,0,0.2);
+
+
+}
+
+.Card03{
+   width: 50vw;
+  height: 40em;
+   margin: 2em;
+   box-shadow:  0 3em 3em 0 rgba(0,0,0,0.2);
+
+
+}
+
+
+.ContainerE{
+ 
+  margin-top:1em;
+  font-size: 2em;
+  margin-left: 1em;
+  font-family: 'open sans light', sans-serif;
+
+
+}
+
+.social{
+  position: relative;
+  margin-top: -75em;
+  width: 4em;
+  float: right;
+
+  
+}
+
+p.aboutBody{
+  font-family: 'open sans', sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 2em;
+  margin-top: 2em;
+  padding-left: 6em;
+  z-index: 2;
+  letter-spacing: 0.2em;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*-------phone-------*/
+@media screen and (min-width:320px)
+ and (max-width:560px)
+        {
+
+
+
+h3.mainheadline{
+	font-family: 'open sans light';
+	font-size: 3em;
+	position: absolute;
+	top: 65em;
+	color: white;
+	margin-left: 2.5em;
+
+}
+
+
+
+
+h4.mainheadline{
+    top: 80em;
+	color: white;
+	margin-left: 3.9em;
+	font-family: 'open sans light';
+	font-size: 3em;
+	position: absolute;
+}
+
+h5.mainheadline{
+    top: 73em;
+	color: #ffffff;
+	margin-left: 2.5em;
+	font-family: 'open sans light';
+	font-size: 3em;
+	position: absolute;
+}
+
+h3.MainHeadline{
+  font-family: 'Bali sunrise';
+  color: #121a4b ;
+  font-size: 4em;
+  margin-top: 2em;
+  line-height: 1em;
+  padding-left: 2em;
+  letter-spacing: 0.2em;
+}
+
+
+
+
+
+
+.workimg{
+	width: 50vw;
+	display: flex;
+	margin-top: 2em;
+	padding-left: 1em;
+	float: right;
+}
+
+
+.workImg{
+	width: 100vw;
+	display: flex;
+	margin-top: 5em;
+	padding-right: 5em;
+}
+
+
+.inTouch{
+	font-size: 1.5em;
+	font-family: 'open sans light',sans-serif;
+	float:right;
+	margin-top: -35em;
+	margin-right: 5em;
+	color: white;
+	}
+
+
+
+
+.waveImg{
+  width: 10em;
+  height: 10em;
+  margin-top: -8em;
+  flex-direction: column;
+  float: right;
+  margin-right: 8em;
+}
+
+.waveImg1{
+  width: 10em;
+  height: 10em;
+  margin-top: -8em;
+  flex-direction: column;
+  float: right;
+  margin-right: 11em;
+}
+
+.waveImg2{
+  width: 10em;
+  height: 10em;
+  margin-top: -30em;
+  flex-direction: column;
+  float: right;
+  margin-right: 8em;
+}
+
+
+
+.image{/*--------image has a blue effect -----*/
+    width:40em;
+    border: 1px solid red;
+    display: flex;
+    float: right;
+    padding: .2em;
+    margin:2em;
+    margin-right: 1em;
+    display: flex;
+
+    
+  }
+
+ .Camera{
+  width:50em;
+    border: 1px solid red;
+    padding: .1em;
+    margin: 2em;
+ 
+   
+
+}
+
+.footer{
+  display: block;
+  text-align: center;
+  padding: 1em;
+  background-color:#d2021a ;
+  height: 15em;
+  width: 56em;
+
+  
+}
+
+.imgFooter{
+  float: left;
+  width: 10em;
+  padding-top: 2em;
+  padding-left: 1em;
+  background-repeat: no-repeat;
+}
+
+.contact{
+  position: relative;
+   padding:1em;
+    border:1px solid red;
+   margin-top: 3em;
+
+
+}
+
+
+
+
+
+.myContactForm{
+  background-color: #121a4b ;
+  margin-top: 3em;
+  height: 80em;
+  width: 50em;
+  
+}
+
+
+
+.Input{
+  margin:1em 0 2em 0;
+  resize: vertical;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: .2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  color: white;
+
+}
+
+.form-control{
+ width: 35em;
+  padding: .1em;
+  margin: .1em 0;
+  display: inline-block;
+  box-sizing: border-box;
+
+
+}
+
+
+.MainBtn, .MainBtn:link{
+  background-color: transparent;
+  font-family: 'open sans', sans-serif;
+  font-size: .5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 1em;
+  letter-spacing: 0.5em;
+  border: 2px solid white;
+  margin: 4em;
+
+
+
+
+
+
+}
+
+
+.mainBtn, .mainBtn:link{
+  background-color: transparent;
+  font-family: 'open sans', sans-serif;
+  font-size: .5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 1em;
+  letter-spacing: 0.5em;
+  border: 2px solid white;
+  margin: 20em;
+
+
+
+
+
+
+}
+
+
+.Paragraph1{
+  font-family: 'open sans', sans-serif;
+    font-size: 1.5em;
+    line-height:2em;
+    margin-left:10em;
+    color: white;
+    text-align: left;
+    padding-top: 1em;
+}
+
+.Paragraph{
+  font-family: 'open sans', sans-serif;
+    font-size: 1.5em;
+    line-height:2em;
+    margin-right:6em;
+    color: white;
+    text-align: right;
+    margin-top: -8em;
+
+}
+
+a{
+  color: #121a4b ;
+  font-family: 'open sans';
+  font-size: 1em;
+  margin-left: 23em;
+  border: 2px red;
+
+}
+
+h3.mainHeadline{
+  font-family: 'Bali sunrise';
+  margin-top: -.5em;
+  color: #ffffff;
+  z-index: 2;
+  font-weight: 300;
+  font-size: 4em;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  padding-left: 2em;
+}
+
+
+.row2{
+  display: block;
+  width: 50vw;
+  margin-top: 15em; 
+
+
+
+}
+
+.Card01{
+  width: 70vw;
+  height: 28em;
+ margin: 1em;
+ box-shadow:  0 3em 3em 0 rgba(0,0,0,0.2);
+
+
+
+}
+
+
+.Card02{
+   width: 70vw;
+  height: 28em;
+   margin: 1em;
+   box-shadow:  0 3em 3em 0 rgba(0,0,0,0.2);
+
+
+}
+
+.Card03{
+   width: 70vw;
+  height: 28em;
+   margin: 1em;
+   box-shadow:  0 3em 3em 0 rgba(0,0,0,0.2);
+
+
+}
+
+
+.ContainerE{
+ 
+  margin-top:1em;
+  font-size: 2em;
+  margin-left: 1em;
+  font-family: 'open sans light', sans-serif;
+
+
+}
+
+p.aboutBody{
+  font-family: 'open sans', sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 2em;
+  margin-top: 2em;
+  margin: 3em;
+  z-index: 2;
+  letter-spacing: 0.2em;
+}
+
+
+p.mainBody{
+  font-family: 'open sans', sans-serif;
+  margin-top: 5em;
+  color: #ffffff;
+  z-index: 2;
+  font-weight: 200;
+  font-size: 1.5em;
+  line-height: 2em;
+  letter-spacing: 0.3em;
+  padding-left: 4em;
+  margin-top: 2em;
+}
+
+.menuWild{
+  font-family: 'Open sans';
+  font-size: 1em;
+  position: relative;
+  z-index: 3;
+  padding:2rem;
+}
+
+.menuWild a:link, 
+.menuWild a:visited{
+  color: #fe7827;
+
+}
+
+.menuWild a:hover{
+  color: #fe18cb;
+
+}
+
+#meny {
+    background: #0a2571;
+    width: 20em;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    transition-timing-function: cubic-bezier(10,2,3,1);
+    transform: translateX(50rem);
+    top: 0;
+    z-index: 0;
+    transition: 0.5s;
+}
+
+}
+
+
+
+
+
